@@ -1,0 +1,47 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>S3 Drag and Drop Upload</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #drag-drop-area {
+      border: 2px dashed #ccc;
+      border-radius: 10px;
+      width: 400px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #fff;
+      color: #333;
+      font-size: 18px;
+      margin-top: 20px;
+      transition: border-color 0.3s;
+    }
+    #drag-drop-area.highlight {
+      border-color: #6c5ce7;
+    }
+    .upload-status {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="drag-drop-area">Drag and drop files here</div>
+  <div id="upload-status" class="upload-status"></div>
+  <script src="Dashboard.js" type="module"></script>
+</body>
+</html>
